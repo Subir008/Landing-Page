@@ -35,13 +35,12 @@
         </li>
         <li>
           <a href="#">
-            <span><i class="fa-brands fa-facebook-f"></i></span>
+            <span class="icon"><i class="fa-brands fa-facebook-f"></i></span>
           </a>
         </li>
         <li>
           <a href="#">
-            <span><i class="fa-brands fa-twitter"></i></span>
-            
+            <span class="icon"><i class="fa-brands fa-twitter"></i></span>            
           </a>
         </li>
       </ul>
@@ -126,7 +125,7 @@
          That Suits Your Needs</h3>
       <div class="service-container">
         <div class="service-item">
-          <img src="assests/images/services-coffee.jpg" alt="" />
+          <img src="assests/images/services-coffee.jpg" alt="" loading="lazy" />
           <h3>Off The Ground Off The Ground</h3>
           <p>
             Perfect for fresh ideas or young startups, this package will help
@@ -141,7 +140,7 @@
         </div>
 
         <div class="service-item">
-          <img src="assests/images/services-book.jpg" alt="" />
+          <img src="assests/images/services-book.jpg" alt="" loading="lazy" />
           <h3>Accelerated Growth</h3>
           <p>
             Use this service pack to give your company the necessary impulse to
@@ -156,7 +155,7 @@
         </div>
 
         <div class="service-item">
-          <img src="assests/images/services-laptop.jpg" alt="" />
+          <img src="assests/images/services-laptop.jpg" alt="" loading="lazy" />
           <h3>Market Domination</h3>
           <p>
             You already are a reference point in your industry now you need to
@@ -172,7 +171,7 @@
       </div>
 
       <div class="service-detail-container">
-        <img src="assests/images/service-details-image1.jpg" alt="" />
+        <img src="assests/images/service-details-image1.jpg" alt="" loading="lazy" />
         <div class="service-content">
           <h3>Accelerate Business Growth To Improve Revenue Numbers</h3>
           <p>
@@ -192,7 +191,7 @@
             all types of budgets.
           </p>
         </div>
-        <img src="assests/images/service-details-image2.jpg" alt="" />
+        <img src="assests/images/service-details-image2.jpg" alt="" loading="lazy" />
       </div>
 
       <div class="testimonial-container">
@@ -203,7 +202,7 @@
         </p>
         <div class="testimonial-list-container">
           <div class="testimonial-item">
-            <img src="assests/images/testimonial-1.jpg" alt="" />
+            <img src="assests/images/testimonial-1.jpg" alt="" loading="lazy" />
             <p class="italic">
               At the beginning I thought the prices are a little high for what
               they offer but they over deliver each and every time.
@@ -212,7 +211,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="assests/images/testimonial-2.jpg" alt="" />
+            <img src="assests/images/testimonial-2.jpg" alt="" loading="lazy" />
             <p class="italic">
               I recommend Aria to every business owner or growth leader that
               wants to take his company to the next level.
@@ -221,7 +220,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="assests/images/testimonial-3.jpg" alt="" />
+            <img src="assests/images/testimonial-3.jpg" alt="" loading="lazy" />
             <p class="italic">
               My goals for using Aria's services seemed high when I first set
               them but they've met them with no problems.
@@ -230,7 +229,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="assests/images/testimonial-4.jpg" alt="" />
+            <img src="assests/images/testimonial-4.jpg" alt="" loading="lazy" />
             <p class="italic">
               I purchased the Growth Accelerator service pack a few years ago
               and I renewed the contract each year.
@@ -239,7 +238,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="assests/images/testimonial-5.jpg" alt="" />
+            <img src="assests/images/testimonial-5.jpg" alt="" loading="lazy" />
             <p class="italic">
               Aria's CEO personally attends client meetings and gives his
               feedback on business growth strategies.
@@ -248,7 +247,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="assests/images/testimonial-6.jpg" alt="" />
+            <img src="assests/images/testimonial-6.jpg" alt="" loading="lazy" />
             <p class="italic">
               At the beginning I thought the prices are a little high for what
               they offer but they over deliver each and every time.
@@ -257,7 +256,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="assests/images/testimonial-7.jpg" alt="" />
+            <img src="assests/images/testimonial-7.jpg" alt="" loading="lazy" />
             <p class="italic">
               I recommend Aria to every business owner or growth leader that
               wants to take his company to the next level.
@@ -266,7 +265,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="assests/images/testimonial-8.jpg" alt="" />
+            <img src="assests/images/testimonial-8.jpg" alt="" loading="lazy" />
             <p class="italic">
               My goals for using Aria's services seemed high when I first set
               them but they've met them with no problems.
@@ -283,7 +282,9 @@
     <section id="call_me" class="call_me">
       <div class="call_me-content">
         <span class="section-title"> CALL ME</span>
+        <br>
         <h3>Have Us Contact You By Filling And Submitting The Form</h3>
+        <br>
         <p>
           You are just a few steps away from a personalized offer. Just fill in
           the form and send it to us and we'll get right back with a call to
@@ -307,12 +308,11 @@
             <option value="Accelerated Growth">Accelerated Growth</option>
             <option value="Market Domination">Market Domination</option>
           </select>
-          <label for="">Please select an item in the list.</label>
-          <input type="checkbox" />
-          <label for=""
-            >I agree with Aria's stated Privacy Policy and Terms &
-            Conditions</label
-          >
+          <div class="terms">
+            <input type="checkbox" name="terms" />
+            <label for="terms">I agree with Aria's stated <span class="underline"> Privacy Policy </span> and <span class="underline">Terms &
+              Conditions</span> </label>
+            </div>
           <button>CALL ME</button>
         </form>
       </div>
@@ -321,32 +321,22 @@
 
     <!-- Start -->
     <section id="projects" class="projects">
-      <div class="projects-content">
         <span class="section-title">PROJECTS</span>
         <h2>Projects That We're Proud Of</h2>
-
         <div class="project-list-container">
           <ul>
             <li>
-              <button>Show All</button>
+              <button class="active">Show All</button>
             </li>
-          </ul>
-          <ul>
             <li>
               <button>Design</button>
             </li>
-          </ul>
-          <ul>
             <li>
               <button>Development</button>
             </li>
-          </ul>
-          <ul>
             <li>
               <button>Marketing</button>
             </li>
-          </ul>
-          <ul>
             <li>
               <button>Seo</button>
             </li>
@@ -354,87 +344,89 @@
         </div>
 
         <div class="project-list-content">
-          <div class="project-list-item">
-            <img src="" alt="" />
+          <div class="project-list-item image-1">
           </div>
-          <div class="project-list-item">
-            <img src="" alt="" />
+          <div class="project-list-item image-2">
           </div>
-          <div class="project-list-item">
-            <img src="" alt="" />
+          <div class="project-list-item image-3">
           </div>
-          <div class="project-list-item">
-            <img src="" alt="" />
+          <div class="project-list-item image-4">
           </div>
-          <div class="project-list-item">
-            <img src="" alt="" />
+          <div class="project-list-item image-5">
           </div>
-          <div class="project-list-item">
-            <img src="" alt="" />
+          <div class="project-list-item image-6">
           </div>
-          <div class="project-list-item">
-            <img src="" alt="" />
-          </div>
-          <div class="project-list-item">
-            <img src="" alt="" />
-          </div>
+          <div class="project-list-item image-7">
+         </div>
+          <div class="project-list-item image-8">
+         </div>
         </div>
-      </div>
 
-      <div class="team">
-        <h4>Our Team Of Consultants</h4>
-        <p>
-          We're only as strong and as knowledgeable as our team. So here are the
-          men and women which help customers meet goals and grow companies
-        </p>
-        <div class="team-member-list-container">
-          <div class="team-meber-list-content">
-            <img src="" alt="" />
-            <p>ohn Whitelong</p>
-            <p>General Manager</p>
-            <div class="social-media-link">
-              <span>F</span>
-              <span>T</span>
-            </div>
-          </div>
-          <div class="team-meber-list-content">
-            <img src="" alt="" />
-            <p>Veronique Smith</p>
-            <p>Business Developer</p>
-            <div class="social-media-link">
-              <span>F</span>
-              <span>T</span>
-            </div>
-          </div>
-          <div class="team-meber-list-content">
-            <img src="" alt="" />
-            <p>Chris Zimerman</p>
-            <p>Online Marketer</p>
-            <div class="social-media-link">
-              <span>F</span>
-              <span>T</span>
-            </div>
-          </div>
-          <div class="team-meber-list-content">
-            <img src="" alt="" />
-            <p>Mary Villalonga</p>
-            <p>Community Manager</p>
-            <div class="social-media-link">
-              <span>F</span>
-              <span>T</span>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- End -->
 
+    <section class="team">
+      <!-- <div class="team"> -->
+        <h3>Our Team Of Consultants</h3>
+        <p>
+          We're only as strong and as knowledgeable as our team. So here are the
+          men and <br> women which help customers meet goals and grow companies
+        </p>
+        <div class="team-member-container">
+          <div class="team-member-item">
+            <div class="team-img">
+              <img src="assests/images/team-1.jpg" alt="Member 1" loading="lazy" />
+            </div>
+            <p>John Whitelong</p>
+            <h4>General Manager</h4>
+            <div class="social-media-link">
+              <span class="icon"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="icon"><i class="fa-brands fa-twitter"></i></span>
+            </div>
+          </div>
+          <div class="team-member-item">
+            <div class="team-img">
+              <img src="assests/images/team-3.jpg" alt="Member 2" loading="lazy"/>
+            </div>
+            <p>Veronique Smith</p>
+            <h4>Business Developer</h4>
+            <div class="social-media-link">
+              <span class="icon"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="icon"><i class="fa-brands fa-twitter"></i></span>
+            </div>
+          </div>
+          <div class="team-member-item">
+            <div class="team-img">
+              <img src="assests/images/team-2.jpg" alt="Member 3" loading="lazy"/>
+            </div>
+            <p>Chris Zimerman</p>
+            <h4>Online Marketer</h4>
+            <div class="social-media-link">
+              <span class="icon"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="icon"><i class="fa-brands fa-twitter"></i></span>
+            </div>
+          </div>
+          <div class="team-member-item">
+            <div class="team-img">
+              <img src="assests/images/team-4.jpg" alt="Member 4" loading="lazy"/>
+            </div>
+            <p>Mary Villalonga</p>
+            <h4>Community Manager</h4>
+            <div class="social-media-link">
+              <span class="icon"><i class="fa-brands fa-facebook-f"></i></span>
+              <span class="icon"><i class="fa-brands fa-twitter"></i></span>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </section>
+
     <!-- Start -->
     <section id="about" class="about">
-      <img src="" alt="" />
+      <img src="assests/images/about.jpg" alt="About" loading="lazy" />
       <div class="about-content">
         <span class="section-title"> ABOUT </span>
-        <h3>We're Passionate About Delivering Growth Services</h3>
+        <h3>We're Passionate About <br> Delivering Growth Services</h3>
         <p>
           Our goal is to provide the right business growth services at the
           appropriate time so companies can benefit from the created momentum
@@ -447,15 +439,15 @@
 
         <div class="about-list-container">
           <div class="about-list-content">
-            <span>231</span>
+            <span class="number">231</span>
             <p>Happy User</p>
           </div>
           <div class="about-list-content">
-            <span>121</span>
+            <span  class="number">121</span>
             <p>Issue Solved</p>
           </div>
           <div class="about-list-content">
-            <span>159</span>
+            <span  class="number">159</span>
             <p>Good Reviews</p>
           </div>
         </div>
@@ -475,22 +467,20 @@
 
         <div class="contact-info-list-container">
           <div class="contact-info-item">
-            <span>I</span>
-            <p>22nd Innovative Street, San Francisco, CA 94043, US</p>
+            <p><i class="fa-solid fa-location-dot"></i> 22nd Innovative Street, San Francisco, CA 94043, US</p>
           </div>
           <div class="contact-info-item">
-            <span>I</span>
-            <p>+81 720 22 126</p>
+            <p><i class="fa-solid fa-phone"></i> +81 720 22 126</p>
           </div>
           <div class="contact-info-item">
-            <span>I</span>
-            <p>+81 720 22 128</p>
+            <p> <i class="fa-solid fa-phone"></i> +81 720 22 128</p>
           </div>
           <div class="contact-info-item">
-            <span>I</span>
-            <p>office@aria.com</p>
+            <p><i class="fa-solid fa-envelope"></i> office@aria.com</p>
           </div>
         </div>
+        <br>
+        <br>
         <h3>Follow Aria On Social Media</h3>
         <div class="social-links-list-container">
           <div class="social-links-item">
