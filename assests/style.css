@@ -12,6 +12,8 @@
     --disabled-color-2 : #c1cace;
     --dark-white: #d9e2ec ; 
     --border-color: #ebe8e8 ;
+    --image-contrast: 60%;
+    --image-grayscale: 20%;
 }
 
 
@@ -51,6 +53,7 @@ button:hover{
     font-style: italic;
 }
 
+/* Navbar Section Start */
 nav{
     display: flex;
     flex-direction: row;
@@ -61,6 +64,7 @@ nav{
     align-items: center;
     box-sizing: border-box;
     color: var(--white-color);
+    z-index: 999;
 }
 
 nav a{
@@ -91,7 +95,9 @@ nav ul{
     padding: 0;
     text-transform: uppercase;
 }
+/* Navbar Section End */
 
+/* Home Section Start */
 .home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../assests/images/home-background.jpg);
     min-height: 90vh;
@@ -115,9 +121,10 @@ nav ul{
     font-size: 1.5rem;
     width: 50%;
 }
+/* Home Section End */
+
 
 /* Intro Section Start */
-
 .intro{
     padding: 5rem 20vw;
     background-color: var(--white-color);
@@ -201,11 +208,10 @@ nav ul{
 .intro .skills .skills-item p{
     color: var(--light-grey-color);
 }
-
 /* Intro Section End */
 
-/* services Section Start */
 
+/* services Section Start */
 .services{
     padding: 5rem 0;
     background-color: var();
@@ -244,7 +250,7 @@ nav ul{
     height: 12rem;
     object-fit: cover;
     object-position: center;
-    filter: grayscale(20%) contrast(56%);
+    filter: grayscale(var(--image-grayscale)) contrast(var(--image-contrast));
     border-radius: 5px 5px 0 0;
 }
 
@@ -292,6 +298,90 @@ nav ul{
 
 .services .service-item button:hover{
     background-color: var(--background-color);
+}
+
+.services .service-detail-container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color);
+}
+
+.service-detail-container img{
+    width: 50%;
+    filter: grayscale(var(--image-grayscale)) contrast(var(--image-contrast));
+    height: 35rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.service-detail-container .service-content{
+    width: 50%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.services .service-detail-container:nth-child(even) .service-content{
+    padding: 8rem 20vw 8rem 6rem;
+} 
+
+.services .service-detail-container:nth-child(odd) .service-content{
+    padding: 7rem 6rem 8rem 20vw;
+
+} 
+
+.services .service-detail-container .service-content h3{
+    color: var(--dark-grey-color);
+    font-size: 1.75rem;
+}
+
+.services .service-detail-container .service-content p{
+    color: var(--light-grey-color);
+    font-size: 1rem;
+}
+
+.services .testimonial-container{
+    padding: 5rem 20vw;
+}
+
+.services .testimonial-container h2{
+    text-align: center;
+    color: var(--dark-grey-color);
+}
+
+.services .testimonial-container p{
+    text-align: center;
+    color: var(--light-grey-color);
+}
+
+.services .testimonial-list-container{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    overflow-x: scroll;
+    padding: 1.5rem 1rem;
+}
+
+.services .testimonial-item{
+    width: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services .testimonial-item img{
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.services .testimonial-item p{
+    line-height: 1.5rem;
+}
+
+.services .testimonial-item h4{
+    color: var(--dark-grey-color);
 }
 
 /* services Section End */
