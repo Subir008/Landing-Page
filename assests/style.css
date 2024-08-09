@@ -623,35 +623,43 @@ nav ul .icon:hover {
     margin-bottom: 5rem;
 }
 
-.projects .project-list-content .project-list-item{
+.projects .project-list-content .project-list-item .project-item{
     aspect-ratio: 1/1;
     background-size: cover;
     background-position: center;
     
 }
 
-.projects .project-list-item.image-1{
+.projects .project-list-content .project-list-item{
+    overflow: hidden;
+}
+
+.projects .project-list-content .project-item:hover{
+    transform: scale(1.5);
+}
+
+.projects .project-list-item .project-item.image-1{
     background-image: url("../assests/images/project-1.jpg");
 }
-.projects .project-list-item.image-2{
+.projects .project-list-item .project-item.image-2{
     background-image: url("../assests/images/project-2.jpg");
 }
-.projects .project-list-item.image-3{
+.projects .project-list-item .project-item.image-3{
     background-image: url("../assests/images/project-3.jpg");
 }
-.projects .project-list-item.image-4{
+.projects .project-list-item .project-item.image-4{
     background-image: url("../assests/images/project-4.jpg");
 }
-.projects .project-list-item.image-5{
+.projects .project-list-item .project-item.image-5{
     background-image: url("../assests/images/project-5.jpg");
 }
-.projects .project-list-item.image-6{
+.projects .project-list-item .project-item.image-6{
     background-image: url("../assests/images/project-6.jpg");
 }
-.projects .project-list-item.image-7{
+.projects .project-list-item .project-item.image-7{
     background-image: url("../assests/images/project-7.jpg");
 }
-.projects .project-list-item.image-8{
+.projects .project-list-item .project-item.image-8{
     background-image: url("../assests/images/project-8.jpg");
 }
 /* Projects Section End */
