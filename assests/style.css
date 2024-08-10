@@ -71,18 +71,24 @@ nav .mobile-menu{
     display: none;
 }
 
-nav{
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+.navbar nav{
     display: flex;
     flex-direction: row;
-    position: fixed;
     justify-content: space-between;
     width: 100%;
     padding: 0.75rem 3rem;
     align-items: center;
     box-sizing: border-box;
     color: var(--white-color);
-    z-index: 999;
-    backdrop-filter: blur(10px) grayscale(var(--image-grayscale)) contrast(var(--image-contrast));
+    /* backdrop-filter: blur(10px) grayscale(var(--image-grayscale)) contrast(var(--image-contrast)); */
+    background-color: var(--dark-green-color);
 }
 
 nav a{
@@ -126,6 +132,35 @@ nav ul .icon:hover {
 
 /* Navbar Section End */
 
+/* Mobile Menu Start */
+.mobile-menu-list{
+    background-color: var(--dark-green-color);
+    z-index: 999;
+}
+
+.mobile-menu-list ul{
+    list-style: none;
+    line-height: 2.2rem;
+    font-size: 1.3rem;
+}
+
+.mobile-menu-list a{
+    text-decoration: none;
+    color: var(--white-color);
+    transition: color 0.125s ease-in-out;
+    text-transform: uppercase;
+}
+
+.mobile-menu-list a:visited{
+    color: var(--white-color);
+}
+
+.mobile-menu-list a:hover{
+    color: var(--light-green-color);
+}
+
+/* Mobile Menu End */
+
 /* Home Section Start */
 .home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../assests/images/home-background.jpg);
@@ -139,6 +174,8 @@ nav ul .icon:hover {
     text-align: center;
     color: var(--white-color);
     gap: 1.5rem;
+    position: relative;
+    top: 88px;
 }
 
 .home h1{
@@ -155,7 +192,7 @@ nav ul .icon:hover {
 
 /* Intro Section Start */
 .intro{
-    padding: 5rem 20vw;
+    padding: 7rem 20vw 1rem;
     background-color: var(--white-color);
 }
 
@@ -365,7 +402,7 @@ nav ul .icon:hover {
 }
 
 .services .service-detail-container:nth-child(even) .service-content{
-    padding: 8rem 16vw 8rem 6rem;
+    padding: 6rem 16vw 8rem 6rem;
 } 
 
 .services .service-detail-container:nth-child(odd) .service-content{
@@ -1114,6 +1151,11 @@ footer .copyright{
     
 }
 
+@media screen and (min-width:1000px) {
+    .mobile-menu-list{
+        display: none;
+    }
+}
 
 
 @media screen and (max-width:1000px ) {
@@ -1123,6 +1165,18 @@ footer .copyright{
 
     nav .mobile-menu{
         display: block;
+    }
+
+    .mobile-menu-list{
+        display: none;
+        padding: 0.1rem ;
+    }
+    .show{
+        display: block;
+    }
+
+    .home{
+      
     }
 
     .intro {
@@ -1135,7 +1189,7 @@ footer .copyright{
 
     .intro .content .text , .intro .content .image-container{
         width: 100%;
-        padding: 0;
+        /* padding: 0; */
     }
 
     .intro .skills{
@@ -1203,7 +1257,7 @@ footer .copyright{
     }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 825px) {
     nav {
         position: sticky;
         top: 0;
@@ -1264,6 +1318,14 @@ footer .copyright{
         padding: 4rem 8vw 3rem 4rem;
     }
 
+    .projects {
+        padding: 4rem 8vw 0;
+    }
+
+    .projects .project-list-content {
+        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(2,1fr);
+    }
    
 }
 
@@ -1278,14 +1340,7 @@ footer .copyright{
         width: 100%;
     }   
 
-    .projects {
-        padding: 4rem 8vw 0;
-    }
-
-    .projects .project-list-content {
-        grid-template-rows: repeat(4,1fr);
-        grid-template-columns: repeat(2,1fr);
-    }
+  
     
 }
 
