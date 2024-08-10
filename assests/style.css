@@ -277,7 +277,7 @@ nav ul .icon:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
-    padding: 3rem 19vw;
+    padding: 3rem 19vw 6rem;
 }
 
 .services .service-container .service-item{
@@ -630,12 +630,32 @@ nav ul .icon:hover {
     
 }
 
+.projects .project-list-content .project-list-item h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: var(--white-color);
+    width: 100%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.125s ease-in-out;
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
 .projects .project-list-content .project-list-item{
+    position: relative;
     overflow: hidden;
 }
 
 .projects .project-list-content .project-item:hover{
+    filter: contrast(var(--image-contrast))  grayscale(var(--image-grayscale));
     transform: scale(1.5);
+}
+
+.projects .project-list-content .project-item:hover ~ h3 , .projects .project-list-content .project-item ~ h3:hover{
+    
+    opacity: 1;
 }
 
 .projects .project-list-item .project-item.image-1{
@@ -964,6 +984,30 @@ footer .copyright{
 }
 
 /* Footer Section End */
+
+/* Back to top */
+
+#back-to-top{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+
+    border-radius: 50%;
+}
+
+
+#back-to-top:hover{
+    box-shadow: 0px 0px 10px black;
+}
+
+#back-to-top img{
+    height: 40px;
+    width: 40px;
+}
+
+/* Back to top */
 
 @media screen  and (max-width:1100px) and  (min-width:800px) {
     .services .service-detail-container:nth-child(even) .service-content {
