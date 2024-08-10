@@ -365,11 +365,11 @@ nav ul .icon:hover {
 }
 
 .services .service-detail-container:nth-child(even) .service-content{
-    padding: 8rem 20vw 8rem 6rem;
+    padding: 8rem 16vw 8rem 6rem;
 } 
 
 .services .service-detail-container:nth-child(odd) .service-content{
-    padding: 7rem 5rem 8rem 16vw;
+    padding: 7rem 5rem 8rem 13vw;
 
 } 
 
@@ -381,6 +381,7 @@ nav ul .icon:hover {
 .services .service-detail-container .service-content p{
     color: var(--light-grey-color);
     font-size: 1rem;
+    line-height: 1.5rem;
 }
 
 .services .service-detail-container-1 .service-content p{
@@ -464,6 +465,66 @@ nav ul .icon:hover {
     cursor: pointer;
 }
 
+.service-detail-container-2 .service-content-list-2{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    color: var(--dark-grey-color);
+    margin-top: 1rem;
+}
+.service-detail-container-2 .service-content-list-2 .service-content-item{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.service-detail-container-2 .service-content-list-2 .service-content-item .content{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.service-detail-container-2 .service-content-list-2 .service-content-item .content span{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--light-green-color);
+}
+
+.service-detail-container-2 .service-content-list-2 .service-content-item .content p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.service-detail-container-2 .service-content-list-2 .service-content-item .content p strong{
+    color: var(--dark-grey-color);
+}
+
+.service-detail-container-2 .service-content .service-content-3 p {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+}
+
+.service-detail-container-2 .service-content .service-content-3 p strong{
+    color: var(--dark-grey-color);
+}
+
+.service-detail-container-2 .service-content .service-content-3 ul{
+    padding-left: 0;
+    list-style: none;
+    line-height: 2rem;
+    
+    color: var(--light-grey-color);
+}
+
+.service-detail-container-2 .service-content .service-content-3 ul li::before{
+    content: '\25a0';
+    margin-right: 10px;
+    font-size: 1.1rem ;
+    color: var(--light-green-color);
+}
+
+
 .services .testimonial-container{
     padding: 5rem 20vw 0rem;
 }
@@ -482,12 +543,12 @@ nav ul .icon:hover {
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     padding: 1.5rem 1rem;
 }
 
 .services .testimonial-item{
-    width: 30%;
+    width: 100%;
     flex-grow: 0;
     flex-shrink: 0;
     display: flex;
@@ -507,7 +568,40 @@ nav ul .icon:hover {
 
 .services .testimonial-item h4{
     color: var(--dark-grey-color);
+    text-align: center;
 }
+
+.services .testimonial-container .testimonial-list-container{
+    position: relative;
+}
+
+/* Next & previous buttons */
+.services .testimonial-container .testimonial-list-container .prev, .services .testimonial-container .testimonial-list-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .services .testimonial-container .testimonial-list-container .next{
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .testimonial-item div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* services Section End */
 
@@ -1085,10 +1179,6 @@ footer .copyright{
 
     .services .testimonial-container{
         padding: 5rem 7vw;
-    }
-
-    .services .testimonial-item{
-        width: 50%;
     }
 
     .about{
