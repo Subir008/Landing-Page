@@ -192,7 +192,7 @@ nav ul .icon:hover {
 
 /* Intro Section Start */
 .intro{
-    padding: 7rem 20vw 1rem;
+    padding: 7rem 20vw 0rem;
     background-color: var(--white-color);
 }
 
@@ -294,7 +294,7 @@ nav ul .icon:hover {
 
 /* services Section Start */
 .services{
-    padding: 5rem 0;
+    padding: 6rem 0 5rem;
     background-color: var();
 }
 
@@ -644,7 +644,7 @@ nav ul .icon:hover {
 
 /* Call_me Section Start */
 .call_me{
-    padding: 5rem 17vw;
+    padding: 6.5rem 17vw 5rem;
     background-color: var(--green-background-color);
     display: flex;
     flex-direction: row;
@@ -709,7 +709,7 @@ nav ul .icon:hover {
 
 /* Projects Section Start */
 .projects{
-    padding: 5rem 18vw;
+    padding: 6.5rem 18vw 1rem;
     background-color: var(--white-color);
 }
 
@@ -819,7 +819,7 @@ nav ul .icon:hover {
 /* Team Section Start */
 .team{
     background-color: var(--background-color);
-    padding: 2rem 20vw;
+    padding: 0rem 20vw;
 }
 
 .team > h3{
@@ -840,7 +840,7 @@ nav ul .icon:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 0;
+    padding: 3rem 0 1rem;
 }
 
 .team .team-member-container .team-member-item{
@@ -873,9 +873,10 @@ nav ul .icon:hover {
 .team .team-member-item h4{
     color: var(--dark-grey-color);
     font-size: 1.20rem;
+    text-align: center;
 }
 .team .team-member-item p{
-    line-height: 0;
+    line-height: 0.9;
 }
 
 .team .team-member-item .social-media-link{
@@ -902,7 +903,7 @@ nav ul .icon:hover {
 .about{
     display: flex;
     flex-direction: row;
-    padding: 5rem 15vw;
+    padding: 6.5rem 15vw 0rem;
 }
 
 .about > img{
@@ -960,7 +961,8 @@ nav ul .icon:hover {
     flex-shrink: 0;
     flex-grow: 0;
     align-items: center;
-    gap: 10px;
+    gap: 3px;
+    flex-wrap: wrap;
 }
 
 .about .about-content .number{
@@ -976,7 +978,7 @@ nav ul .icon:hover {
 
 .contact{
     background-color: var(--white-color);
-    padding: 5rem 16vw;
+    padding: 6.5rem 16vw;
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -1175,10 +1177,6 @@ footer .copyright{
         display: block;
     }
 
-    .home{
-      
-    }
-
     .intro {
         padding: 5rem 7vw;
     }
@@ -1311,11 +1309,11 @@ footer .copyright{
     }
 
     .services .service-detail-container:nth-child(even) .service-content {
-        padding: 4rem 8vw 5rem 4rem;
+        padding: 3rem 8vw 3rem 2rem;
     }
 
     .services .service-detail-container:nth-child(odd) .service-content {
-        padding: 4rem 8vw 3rem 4rem;
+        padding: 3rem 8vw 3rem 2rem;
     }
 
     .projects {
@@ -1340,8 +1338,9 @@ footer .copyright{
         width: 100%;
     }   
 
-  
-    
+    .intro .content .text {
+        padding-right: 0;
+    }
 }
 
 @media screen and ( max-width:600px) {
@@ -1355,7 +1354,7 @@ footer .copyright{
         justify-content: space-evenly;
     }
     .team .team-member-container .team-member-item {
-        width: 50%;
+        width: 100%;
     }
 }
 
@@ -1374,8 +1373,18 @@ footer .copyright{
         justify-content: center;
         align-items: center;
     }
-
+    
     .about .about-list-container .about-list-content {
         width: auto;
+    }
+}
+
+@media screen and (max-width: 360px)  {
+    .services .service-detail-container-2 .service-category-container {
+     flex-wrap: wrap;
+    }
+
+    .contact .content .social-links-list-container {
+        flex-wrap: wrap;
     }
 }
